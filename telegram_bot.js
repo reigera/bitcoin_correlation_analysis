@@ -1,7 +1,7 @@
-const { analyzeCryptocurrenciesScript } = require('./analysisScript');
+const { analyzeCryptocurrenciesScript } = require('./analysis_script');
 
 const TelegramBot = require('node-telegram-bot-api');
-const botToken = '7182253773:AAGAiUd54KNfyzcWZdfRM4UpYMgI8mtg64I';
+const botToken = 'your bot token';
 const bot = new TelegramBot(botToken, { polling: true });
 
 bot.onText(/\/start/, (msg) => {
